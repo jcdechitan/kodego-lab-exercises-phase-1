@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #0e1116;
+        color: #ffffff;
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        z-index: -1;
+      }
+      a {
+        color: #00171f;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: #0e1116;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        height: 50px;
+        z-index: 2;
+        border-bottom: 1px solid whitesmoke;
+      }
+
+      header .IMG #Portfolioimg {
+        height: 30px;
+        width: 100px;
+        margin-left: 100px;
+        border-radius: 5px;
+      }
+      header .Navigation a {
+        text-decoration: none;
+        margin: 0 0.5rem;
+        color: antiquewhite;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+      }
+
+      header .Navigation {
+        margin-right: 50px;
+      }
+
+      main {
+        height: 700px;
+        background: url(./backgroundwd.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: -1;
+      }
+      main .hero {
+        display: flex;
+        width: 100%;
+        height: 700px;
+        gap: 100px;
+      }
+      main .hero #Gradpic img {
+        height: 500px;
+        border-radius: 20px;
+      }
+      .Cont {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        border: 1px solid whitesmoke;
+        padding: 10px;
+        backdrop-filter: blur(3px);
+        border-radius: 20px;
+        margin-left: 250px;
+        padding: 20px;
+        position: relative;
+      }
+      #Gradpic {
+        margin: auto;
+        padding: 10px;
+        margin-right: 150px;
+      }
+      #Lastname {
+        font-size: 50px;
+        color: aqua;
+        display: block;
+      }
+      #Firstname {
+        font-size: 35px;
+        color: whitesmoke;
+        display: block;
+        padding-bottom: 30px;
+      }
+      #Name p {
+        font-size: 20px;
+        padding-bottom: 35px;
+      }
+      #Name #CnctBtn {
+        color: aqua;
+        background-color: #0e1116;
+        display: block;
+        height: 40px;
+        width: 150px;
+        border-radius: 15px;
+        font-size: 20px;
+        padding: 2px;
+        padding-top: 7px;
+        margin: auto;
+        text-align: center;
+      }
+      #Name #CnctBtn a {
+        margin: auto;
+      }
+      /*SECOND SECTION */
+      #SPBackground {
+        display: flex;
+        height: 700px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+      }
+      #SPIntro {
+        padding: 120px;
+        height: 600px;
+        width: 70%;
+      }
+      #SPIntro p {
+        margin-bottom: 100px;
+        line-height: 23px;
+      }
+      #SPIntro h1 {
+        color: aqua;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: block;
+      }
+      #skillsbox {
+        width: 30%;
+      }
+      #skillsbox #skillsimg {
+        flex: 50%;
+        border: 1px solid whitesmoke;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        background-color: rgb(48, 48, 46);
+        transition: 1s;
+      }
+      #skillsbox #skillsimg img {
+        height: 128px;
+        margin-top: 8px;
+        padding: 2px;
+        margin: auto;
+        display: block;
+        border-radius: 5px;
+      }
+      #skillsimg img:hover {
+        transform: scale(1.3);
+      }
+      /* THIRD SECTION */
+      #TPBackground {
+        display: flex;
+        height: 700px;
+        position: relative;
+        justify-content: center;
+        border-top: solid #ffffff;
+        padding-top: 100px;
+      }
+      #TPBackground h1 {
+        font-size: 30px;
+        color: aqua;
+      }
+      #bckgrnd {
+        text-align: center;
+        font-size: 40px;
+        color: aqua;
+        font-weight: 700;
+        padding: 20px;
+        margin-bottom: 50px;
+      }
+
+      .TP {
+        display: flex;
+        gap: 100px;
+        margin: auto;
+      }
+      #edu {
+        display: grid;
+        border: solid whitesmoke;
+        padding: 30px;
+        width: 500px;
+
+        height: 300px;
+        border-radius: 20px;
+      }
+      #skills {
+        display: grid;
+        border: solid white;
+        padding: 30px;
+        width: 500px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="IMG">
+        <img id="Portfolioimg" src="./MyportfolioLogo.png" alt="" />
+      </div>
+      <nav class="Navigation">
+        <a href="./Myportfolio.html">Home</a>
+        <a href="#SPBackground">Introduction</a>
+        <a href="#TPBackground">Background</a>
+        <a href="./MyportfolioSignup.html">Contacts</a>
+      </nav>
+    </header>
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="Cont">
+          <div id="Name">
+            <span id="Lastname">Dechitan</span>
+            <span id="Firstname">John Carlo</span>
+            <p>Your Partner in Digital Success.</p>
+            <a id="CnctBtn" href="./DechitanJohnCarloResume.pdf"> See my Cv </a>
+          </div>
+        </div>
+        <div id="Gradpic"><img src="./grad.JPG" alt="Toga" /></div>
+      </section>
+    </main>
+    <!-- INTRODUCTION -->
+    <section id="SPBackground">
+      <div id="SPIntro">
+        <h1 id="SPInt">Introduction</h1>
+        <p>
+          I'm John Carlo Dechitan. 25 year's old , currently living at Brgy.
+          Paciano Calamba city, Laguna. College graduate with a Bachelor's
+          Degree in Computer Engineering. Knowledge in HTML, CSS, JavaScript,
+          and other programming languages and familiarity with tools such as
+          Git, CMS platforms, and hosting services.
+        </p>
+        <h1>Objectives</h1>
+        <p>
+          Self-motivated and adaptable developer with applicable database
+          knowledge and coding skills. Organized programmer looking for an
+          opportunity to grow as a developer and support an ambitious startup
+          technology company. Collaborative communicator with relationship
+          building skills.
+        </p>
+      </div>
+      <div id="skillsbox">
+        <div id="skillsimg">
+          <img src="./engr-logo.png" alt="" />
+          <img src="./github-mark-white.png" alt="" />
+          <img src="./html-img.png" alt="" />
+          <img src="./css-logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- THIRD SECTION -->
+    <section id="TPBackground">
+      <div class="TPIntro">
+        <div id="bckgrnd">
+          <span id="back">Background</span>
+        </div>
+
+        <div class="TP">
+          <div id="edu">
+            <h1>College</h1>
+            <ul>
+              <h2>STI College Calamba</h2>
+              <li>
+                <h3>Bachelor of Science in Computer Engineering 2018 - 2022</h3>
+              </li>
+            </ul>
+            <ul>
+              <h2>University of Perpetual Help System Dalta Calamba Campus</h2>
+              <li>
+                <h3>Bachelor of Science in Computer Engineering 2015 - 2018</h3>
+              </li>
+            </ul>
+          </div>
+          <div id="skills">
+            <h1>Work Experience</h1>
+
+            <ul>
+              <h2>AutoCAD Operator</h2>
+              <li><h3>November - December 2022</h3></li>
+            </ul>
+            <ul>
+              <h2>Field Coordinator</h2>
+              <li><h3>November - December 2023</h3></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

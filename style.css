@@ -1,0 +1,193 @@
+/* common styles */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: yellow;
+  
+  
+}
+html{ 
+  color: cyan;
+}
+body{
+  font-family: sans-serif;
+  background-color: black;
+}
+img{
+  width: 100%;
+}
+h2{
+  padding: 1em;
+  padding-left: 80px;
+}
+ 
+h1{
+  padding: 2rem;
+}
+
+
+ul{
+  padding-left: 75px;
+}
+/* First Page Style */
+.FPIntrobox{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 500px;
+  
+  
+}
+.FPIntrobox2{
+  grid-column: 1 / -1;
+  border-style:double;
+}
+.FPIntro{
+  display: flex;
+  gap: 2rem;
+}
+#FPName{
+  font-size: 40px;
+  
+}
+.FPInt{
+  padding-top: 0px;
+}
+.FPStrengthandWeakness{
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+}
+.FPGradpic{
+  max-width: 500px;
+  max-height: 700px;
+  padding: 30px;
+  margin: 0 auto;
+ }
+.FPRightside{
+  width: 600px;
+}
+.FPInterests{
+  position:absolute;
+  margin-left: 55px;
+  flex-direction: row;
+  justify-content: center;
+}
+.FPButton{
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 130px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: blue;
+  color: yellow;
+}
+/* Hover */
+#FPImage1 {
+  height: 130px;
+  width: 130px;
+  transition: 0.2s;
+}
+#FPImage1 img{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+#FPImage1:hover{
+  transform:scale(1.3);
+  z-index: 2;
+}
+/* Second Page */
+.SPIntrobox{
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: cyan;
+  height: 200vh;
+}
+.SPIntrobox2{
+  grid-column: 1 / -1;
+  background-color: white;
+}
+.SPHeading{
+  position: sticky;
+  top: 0;
+ padding: 2rem;
+ padding-left: 150px;
+}
+.SPbutton{
+  padding: 10rem;
+  padding: 15px 32px;
+  background-color: blue;
+  color: yellow;
+  border-radius: 20px;
+  text-transform: uppercase;
+  
+}
+
+
+
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: black;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+img {
+  width: 80%;
+}
+
+.Intro {
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Gradpic {
+  height: 500px;
+  margin-left: 7rem;
+}
+
+.Cont {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+/*Text
+h2 {
+  font-size: 2rem;
+}
+
+h2,
+h3,
+li {
+  color: cyan;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#myName {
+  color: cyan;
+  text-transform: uppercase;
+  display: block;
+  margin: 2rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
